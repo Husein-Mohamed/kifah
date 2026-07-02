@@ -45,18 +45,12 @@ export default function Team1() {
                         <article
                             key={reason.title}
                             className="kifah-why-icon-card"
-                            style={{ backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.32), rgba(17, 24, 39, 0.32)), url("${reason.image}")` }}
+                            style={{ backgroundImage: `url("${reason.image}")` }}
+                            aria-label={reason.title}
                             data-aos="fade-up"
                             data-aos-duration={800 + index * 100}
                             data-aos-offset={`${30 + index * 5}px`}
-                        >
-                            <div className="kifah-why-icon">
-                                <i className={reason.icon} aria-hidden="true" />
-                            </div>
-
-                            <h3>{reason.title}</h3>
-                            <p>{reason.description}</p>
-                        </article>
+                        />
                     ))}
                 </div>
             </div>

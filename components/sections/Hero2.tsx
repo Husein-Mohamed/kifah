@@ -72,24 +72,12 @@ export default function Hero2() {
                             <div
                                 key={stat.label}
                                 className="kifah-stat-item"
-                                style={{ backgroundImage: `linear-gradient(rgba(5, 12, 23, 0.62), rgba(5, 12, 23, 0.62)), url("${stat.image}")` }}
+                                style={{ backgroundImage: `url("${stat.image}")` }}
+                                aria-label={stat.label}
                                 data-aos="fade-up"
                                 data-aos-duration={stat.duration}
                                 data-aos-offset={stat.offset}
-                            >
-                                <h3>
-                                    <span
-                                        className="odometer text-nowrap"
-                                        data-count={stat.value}
-                                    >
-                                        {stat.value}
-                                    </span>
-
-                                    {stat.suffix}
-                                </h3>
-
-                                <p>{stat.label}</p>
-                            </div>
+                            />
                         ))}
                     </div>
                 </div>
@@ -202,7 +190,7 @@ export default function Hero2() {
                 .kifah-stat-item {
                     position: relative;
                     min-width: 0;
-                    min-height: 154px;
+                    min-height: 180px;
                     padding: 28px;
                     display: flex;
                     flex-direction: column;
@@ -253,7 +241,7 @@ export default function Hero2() {
                     }
 
                     .kifah-stat-item {
-                        min-height: 150px;
+                        min-height: 170px;
                         padding: 24px;
                         border-bottom: 1px solid rgba(255, 255, 255, 0.18);
                     }
@@ -295,7 +283,7 @@ export default function Hero2() {
                     }
 
                     .kifah-stat-item {
-                        min-height: 132px;
+                        min-height: 170px;
                         padding: 22px;
                     }
 
