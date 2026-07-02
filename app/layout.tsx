@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     title: "Kifah Business Park - A Complete Business & Lifestyle Destination",
     description: "Kifah Business Park is a premier business and lifestyle hub featuring entertainment, fitness, dining, sports, and more. One destination, endless possibilities.",
     icons: {
-        icon: [{ url: "/assets/img/logo/kifah%20logo-01.png", type: "image/png" }],
-        shortcut: "/assets/img/logo/kifah%20logo-01.png",
-        apple: [{ url: "/assets/img/logo/kifah%20logo-01.png", type: "image/png" }],
+        icon: [{ url: "/assets/img/logo/kifah%20logo-03.png", type: "image/png" }],
+        shortcut: "/assets/img/logo/kifah%20logo-03.png",
+        apple: [{ url: "/assets/img/logo/kifah%20logo-03.png", type: "image/png" }],
     },
 };
 
