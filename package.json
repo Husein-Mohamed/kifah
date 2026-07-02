@@ -1,0 +1,37 @@
+{
+    "name": "housa-nextjs-template",
+    "version": "2.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^2.6.0",
+        "aos": "^2.3.4",
+        "bootstrap": "^5.3.3",
+        "chart.js": "^4.4.8",
+        "next": "^16.1.6",
+        "react": "^19.2.0",
+        "react-countup": "^6.5.3",
+        "react-dom": "^19.2.0",
+        "react-modal-video": "^2.0.2",
+        "react-redux": "^9.2.0",
+        "react-slick": "^0.30.3",
+        "slick-carousel": "^1.8.1",
+        "swiper": "^12.1.2"
+    },
+    "devDependencies": {
+        "@types/aos": "^3.0.7",
+        "@types/bootstrap": "^5.2.10",
+        "@types/node": "^22",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "@types/react-modal-video": "^1.2.3",
+        "eslint": "^9",
+        "eslint-config-next": "16.1.1",
+        "typescript": "^5"
+    }
+}
