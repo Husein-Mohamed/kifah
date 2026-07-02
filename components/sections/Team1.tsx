@@ -3,21 +3,25 @@ const reasons = [
         icon: "fa-solid fa-location-dot",
         title: "Strategic Location",
         description: "Prime positioning for growth and accessibility.",
+        image: "/assets/img/Branding inside Kifaah/Branding in kifah-01.png",
     },
     {
         icon: "fa-solid fa-people-group",
         title: "High Visitor Traffic",
         description: "Consistent customer flow for businesses.",
+        image: "/assets/img/Branding inside Kifaah/Branding in kifah-02.png",
     },
     {
         icon: "fa-solid fa-building-shield",
         title: "Modern Infrastructure",
         description: "Well-managed, high-quality environment.",
+        image: "/assets/img/Branding inside Kifaah/Branding in kifah-03.png",
     },
     {
         icon: "fa-solid fa-bullhorn",
         title: "Strong Brand Visibility",
         description: "Family and lifestyle-focused destination.",
+        image: "/assets/img/Branding inside Kifaah/Branding in kifah-04.png",
     },
 ];
 
@@ -41,6 +45,7 @@ export default function Team1() {
                         <article
                             key={reason.title}
                             className="kifah-why-icon-card"
+                            style={{ backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.58), rgba(17, 24, 39, 0.58)), url("${reason.image}")` }}
                             data-aos="fade-up"
                             data-aos-duration={800 + index * 100}
                             data-aos-offset={`${30 + index * 5}px`}
