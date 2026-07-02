@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const aboutImages = {
-    main: "/assets/img/website-photos-kifah/IMG_6141.jpg",
-    secondary: "/assets/img/website-photos-kifah/kifah1.jpg",
-    accent: "/assets/img/website-photos-kifah/IMG_6140.jpg",
+    main: "/assets/img/optimized/kifah-hero.jpg",
+    secondary: "/assets/img/optimized/kifah-contact.jpg",
+    accent: "/assets/img/optimized/kifah-building.jpg",
 };
 
 const highlights = [

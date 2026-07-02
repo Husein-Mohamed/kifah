@@ -9,8 +9,8 @@ export default function BowlingPage() {
             heroImage="/assets/img/photos/bowling.png"
             galleryImages={[
                 "/assets/img/photos/bowling.png",
-                "/assets/img/website-photos-kifah/miniza1.jpg",
-                "/assets/img/website-photos-kifah/child1.jpg",
+                "/assets/img/optimized/miniza-card.jpg",
+                "/assets/img/optimized/child1-card.jpg",
             ]}
             highlights={["Modern bowling lanes", "Friendly competition", "Great for groups and events"]}
         />

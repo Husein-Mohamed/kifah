@@ -6,9 +6,9 @@ export default function PoolingPage() {
             title="Pooling & Indoor Games"
             description="Stylish pooling and indoor games areas designed for social interaction, leisure, and friendly competition in a comfortable setting."
             ctaLabel="Book a Game"
-            heroImage="/assets/img/website-photos-kifah/miniza1.jpg"
+            heroImage="/assets/img/optimized/miniza-card.jpg"
             galleryImages={[
-                "/assets/img/website-photos-kifah/miniza1.jpg",
+                "/assets/img/optimized/miniza-card.jpg",
                 "/assets/img/photos/bowling.png",
                 "/assets/img/website-photos-kifah/child2.jpg",
             ]}

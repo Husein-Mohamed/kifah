@@ -6,13 +6,13 @@ const services = [
         title: "Entertainment Facilities",
         href: "/services/entertainment",
         text: "Fun, relaxation, and engaging activities for all ages.",
-        image: "/assets/img/website-photos-kifah/child1.jpg",
+        image: "/assets/img/optimized/child1-card.jpg",
     },
     {
         title: "Fitness & Gym",
         href: "/services/gym",
         text: "Modern equipment and professional fitness environment.",
-        image: "/assets/img/website-photos-kifah/gym.jpg",
+        image: "/assets/img/optimized/gym-card.jpg",
     },
     {
         title: "Bowling",
@@ -24,31 +24,31 @@ const services = [
         title: "Swimming Pool",
         href: "/services/swimming-pool",
         text: "Relaxation and recreation in a safe, clean setting.",
-        image: "/assets/img/website-photos-kifah/swimin1.jpg",
+        image: "/assets/img/optimized/swim-card.jpg",
     },
     {
         title: "Restaurants & Cafes",
         href: "/services/restaurants-cafes",
         text: "Local and international dining for every occasion.",
-        image: "/assets/img/website-photos-kifah/cafe1.jpg",
+        image: "/assets/img/optimized/cafe-card.jpg",
     },
     {
         title: "Rooftop Restaurant",
         href: "/services/rooftop-restaurant",
         text: "Elegant dining with panoramic views.",
-        image: "/assets/img/website-photos-kifah/rooftop1.jpg",
+        image: "/assets/img/optimized/rooftop-card.jpg",
     },
     {
         title: "VIP Restaurant",
         href: "/services/vip-restaurant",
         text: "Private and premium dining experience.",
-        image: "/assets/img/website-photos-kifah/rooftop1.jpg",
+        image: "/assets/img/optimized/rooftop-card.jpg",
     },
     {
         title: "Sports Shop",
         href: "/services/sports-shop",
         text: "Quality sports gear, apparel, and accessories.",
-        image: "/assets/img/website-photos-kifah/miniza1.jpg",
+        image: "/assets/img/optimized/miniza-card.jpg",
     },
 ];
 

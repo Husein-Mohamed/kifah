@@ -41,7 +41,7 @@ export default function Hero2() {
             {/*===== HERO AREA STARTS =======*/}
             <section className="kifah-hero">
                 <Image
-                    src="/assets/img/website-photos-kifah/IMG_6141.jpg"
+                    src="/assets/img/optimized/kifah-hero.jpg"
                     alt="Kifah Business Park"
                     fill
                     priority

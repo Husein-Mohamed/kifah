@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 export default function About3() {
     return (
@@ -12,13 +12,13 @@ export default function About3() {
                                 <div className="row">
                                     <div className="col-lg-6 col-md-6">
                                         <div className="img2 image-anime reveal">
-                                            <img loading="lazy" decoding="async" src="/assets/img/website-photos-kifah/IMG_6141.jpg" alt="Kifah Business Park exterior" />
+                                            <img loading="lazy" decoding="async" src="/assets/img/optimized/kifah-hero.jpg" alt="Kifah Business Park exterior" />
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6">
                                         <div className="space100" />
                                         <div className="img1 image-anime reveal">
-                                            <img loading="lazy" decoding="async" src="/assets/img/website-photos-kifah/IMG_6141.jpg" alt="Modern business park building" />
+                                            <img loading="lazy" decoding="async" src="/assets/img/optimized/kifah-hero.jpg" alt="Modern business park building" />
                                         </div>
                                     </div>
                                 </div>

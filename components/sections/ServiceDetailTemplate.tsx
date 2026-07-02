@@ -56,6 +56,8 @@ export default function ServiceDetailTemplate({
                             <img
                                 src={heroImage}
                                 alt={title}
+                                loading="eager"
+                                decoding="async"
                                 style={{
                                     width: "100%",
                                     height: "380px",
@@ -116,6 +118,8 @@ export default function ServiceDetailTemplate({
                                 <img
                                     src={image}
                                     alt={title}
+                                    loading="lazy"
+                                    decoding="async"
                                     style={{
                                         width: "100%",
                                         height: "280px",

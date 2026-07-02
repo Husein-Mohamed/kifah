@@ -6,9 +6,9 @@ export default function EntertainmentPage() {
             title="Entertainment Facilities"
             description="A vibrant entertainment area offering fun, relaxation, and engaging activities for individuals, families, and groups. Designed to create memorable experiences and repeat visits."
             ctaLabel="Explore Entertainment"
-            heroImage="/assets/img/website-photos-kifah/child1.jpg"
+            heroImage="/assets/img/optimized/child1-card.jpg"
             galleryImages={[
-                "/assets/img/website-photos-kifah/child1.jpg",
+                "/assets/img/optimized/child1-card.jpg",
                 "/assets/img/website-photos-kifah/child2.jpg",
                 "/assets/img/website-photos-kifah/child3.jpg",
             ]}

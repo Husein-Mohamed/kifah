@@ -8,7 +8,7 @@ const venues = [
         type: "Cafe",
         cuisine: "Coffee, Pastries, Light Meals",
         timing: "7:00 AM - 11:00 PM",
-        image: "/assets/img/website-photos-kifah/cafe1.jpg",
+        image: "/assets/img/optimized/cafe-card.jpg",
         description: "A relaxed, modern cafe ideal for breakfast meetings, remote work sessions, and evening coffee.",
     },
     {
@@ -16,7 +16,7 @@ const venues = [
         type: "Restaurant",
         cuisine: "Local and International Fusion",
         timing: "12:00 PM - 12:00 AM",
-        image: "/assets/img/website-photos-kifah/cafe1.jpg",
+        image: "/assets/img/optimized/cafe-card.jpg",
         description: "An all-day dining destination offering a premium mix of regional flavors and global signatures.",
     },
     {
@@ -24,7 +24,7 @@ const venues = [
         type: "Rooftop",
         cuisine: "Grill and Signature Mocktails",
         timing: "5:00 PM - 1:00 AM",
-        image: "/assets/img/website-photos-kifah/rooftop1.jpg",
+        image: "/assets/img/optimized/rooftop-card.jpg",
         description: "A sunset-to-midnight rooftop venue with panoramic ambiance, perfect for celebrations.",
     },
     {
@@ -89,7 +89,7 @@ export default function RestaurantsCafesPage() {
                             }}
                         >
                             <img
-                                src="/assets/img/website-photos-kifah/cafe1.jpg"
+                                src="/assets/img/optimized/cafe-card.jpg"
                                 alt="Restaurants and cafes"
                                 style={{ width: "100%", height: "430px", objectFit: "cover", display: "block" }}
                             />

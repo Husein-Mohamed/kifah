@@ -70,7 +70,7 @@ export default function Contact1() {
                             <div className="kifah-contact-images">
                                 <div className="kifah-contact-main-img">
                                     <Image
-                                        src="/assets/img/website-photos-kifah/kifah1.jpg"
+                                        src="/assets/img/optimized/kifah-contact.jpg"
                                         alt="Kifah Business Park exterior"
                                         fill
                                         sizes="(max-width: 991px) 100vw, 50vw"
@@ -79,7 +79,7 @@ export default function Contact1() {
                                 </div>
                                 <div className="kifah-contact-small-img">
                                     <Image
-                                        src="/assets/img/website-photos-kifah/IMG_6141.jpg"
+                                        src="/assets/img/optimized/kifah-hero.jpg"
                                         alt="Kifah Business Park building"
                                         fill
                                         sizes="320px"

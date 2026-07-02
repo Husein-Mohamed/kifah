@@ -6,13 +6,13 @@ const categories = [
         title: "Entertainment Facilities",
         href: "/services/entertainment",
         description: "Fun & Relaxation",
-        image: "/assets/img/website-photos-kifah/child1.jpg",
+        image: "/assets/img/optimized/child1-card.jpg",
     },
     {
         title: "Fitness & Gym",
         href: "/services/gym",
         description: "Modern Equipment",
-        image: "/assets/img/website-photos-kifah/gym.jpg",
+        image: "/assets/img/optimized/gym-card.jpg",
     },
     {
         title: "Bowling",
@@ -24,19 +24,19 @@ const categories = [
         title: "Restaurants & Cafes",
         href: "/services/restaurants-cafes",
         description: "Diverse Cuisine",
-        image: "/assets/img/website-photos-kifah/cafe1.jpg",
+        image: "/assets/img/optimized/cafe-card.jpg",
     },
     {
         title: "VIP Restaurant",
         href: "/services/vip-restaurant",
         description: "Privacy & Premium Service",
-        image: "/assets/img/website-photos-kifah/rooftop1.jpg",
+        image: "/assets/img/optimized/rooftop-card.jpg",
     },
     {
         title: "Swimming Pool",
         href: "/services/swimming-pool",
         description: "Relaxation & Wellness",
-        image: "/assets/img/website-photos-kifah/swimin1.jpg",
+        image: "/assets/img/optimized/swim-card.jpg",
     },
 ];
 

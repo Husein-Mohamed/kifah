@@ -88,7 +88,7 @@ export default function Others4() {
                             <div className="kifah-choose-images">
                                 <div className="kifah-choose-main-img">
                                     <Image
-                                        src="/assets/img/website-photos-kifah/kifah1.jpg"
+                                        src="/assets/img/optimized/kifah-contact.jpg"
                                         alt="Kifah Business Park exterior"
                                         fill
                                         sizes="(max-width: 991px) 100vw, 50vw"
