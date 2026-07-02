@@ -5,6 +5,7 @@ const heroStats = [
         value: 8,
         suffix: "+",
         label: "Core Business Categories",
+        image: "/assets/img/kifah-services/kifah services-01.png",
         duration: 800,
         offset: "70px",
     },
@@ -12,6 +13,7 @@ const heroStats = [
         value: 6,
         suffix: "+",
         label: "Why Choose Us Points",
+        image: "/assets/img/kifah-services/kifah services-02.png",
         duration: 900,
         offset: "80px",
     },
@@ -19,6 +21,7 @@ const heroStats = [
         value: 6,
         suffix: "+",
         label: "Additional Facilities",
+        image: "/assets/img/kifah-services/kifah services-03.png",
         duration: 1000,
         offset: "90px",
     },
@@ -26,6 +29,7 @@ const heroStats = [
         value: 1,
         suffix: "",
         label: "Complete Destination",
+        image: "/assets/img/kifah-services/kifah services-01.png",
         duration: 1100,
         offset: "100px",
     },
@@ -68,6 +72,7 @@ export default function Hero2() {
                             <div
                                 key={stat.label}
                                 className="kifah-stat-item"
+                                style={{ backgroundImage: `linear-gradient(rgba(5, 12, 23, 0.62), rgba(5, 12, 23, 0.62)), url("${stat.image}")` }}
                                 data-aos="fade-up"
                                 data-aos-duration={stat.duration}
                                 data-aos-offset={stat.offset}
@@ -187,18 +192,24 @@ export default function Hero2() {
                     display: grid;
                     grid-template-columns: repeat(4, minmax(0, 1fr));
                     margin-top: 80px;
-                    padding: 26px 0 4px;
-                    border-top: 1px solid rgba(255, 255, 255, 0.26);
+                    overflow: hidden;
+                    border: 1px solid rgba(255, 255, 255, 0.18);
+                    border-radius: 18px;
+                    background: #07111d;
+                    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
                 }
 
                 .kifah-stat-item {
                     position: relative;
                     min-width: 0;
-                    padding: 0 28px;
-                }
-
-                .kifah-stat-item:first-child {
-                    padding-left: 0;
+                    min-height: 154px;
+                    padding: 28px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
 
                 .kifah-stat-item:not(:last-child)::after {
@@ -242,16 +253,9 @@ export default function Hero2() {
                     }
 
                     .kifah-stat-item {
+                        min-height: 150px;
                         padding: 24px;
                         border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-                    }
-
-                    .kifah-stat-item:first-child {
-                        padding-left: 24px;
-                    }
-
-                    .kifah-stat-item:nth-child(odd) {
-                        padding-left: 0;
                     }
 
                     .kifah-stat-item:nth-child(2)::after {
@@ -286,21 +290,21 @@ export default function Hero2() {
 
                     .kifah-stats {
                         margin-top: 55px;
-                        padding-top: 12px;
+                        grid-template-columns: 1fr;
+                        border-radius: 14px;
                     }
 
                     .kifah-stat-item {
-                        padding: 20px 14px;
+                        min-height: 132px;
+                        padding: 22px;
                     }
 
-                    .kifah-stat-item:first-child,
-                    .kifah-stat-item:nth-child(odd) {
-                        padding-left: 0;
+                    .kifah-stat-item::after {
+                        display: none;
                     }
 
-                    .kifah-stat-item:nth-child(even) {
-                        padding-right: 0;
-                        padding-left: 18px;
+                    .kifah-stat-item:nth-child(3) {
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
                     }
 
                     .kifah-stat-item h3 {

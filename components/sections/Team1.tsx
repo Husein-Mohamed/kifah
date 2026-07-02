@@ -45,7 +45,7 @@ export default function Team1() {
                         <article
                             key={reason.title}
                             className="kifah-why-icon-card"
-                            style={{ backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.58), rgba(17, 24, 39, 0.58)), url("${reason.image}")` }}
+                            style={{ backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.32), rgba(17, 24, 39, 0.32)), url("${reason.image}")` }}
                             data-aos="fade-up"
                             data-aos-duration={800 + index * 100}
                             data-aos-offset={`${30 + index * 5}px`}
