@@ -19,6 +19,9 @@ const socialLinks = [
     },
 ];
 
+const kifahMapUrl = "https://www.google.com/maps/search/kifah+business+park/@2.0376579,45.3040248,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D";
+const kifahMapEmbedUrl = "https://www.google.com/maps?q=2.0376579,45.3040248&z=17&output=embed";
+
 export default function Footer1() {
     return (
         <>
@@ -71,9 +74,9 @@ export default function Footer1() {
                                         src="/assets/img/logo/kifah%20logo-02.png"
                                         alt="Kifah Business Park"
                                         style={{
-                                            width: "220px",
+                                            width: "300px",
                                             height: "auto",
-                                            maxHeight: "70px",
+                                            maxHeight: "96px",
                                             objectFit: "contain",
                                         }}
                                     />
@@ -138,7 +141,7 @@ export default function Footer1() {
                                         </li>
                                         <li>
                                             <Link
-                                                href="https://maps.app.goo.gl/kZvFFpQ9EVAZgUtc6"
+                                                href={kifahMapUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
@@ -166,7 +169,7 @@ export default function Footer1() {
                                     <h3>We Are Here</h3>
                                     <div className="space28" />
                                     <LazyGoogleMap
-                                        src="https://maps.google.com/maps?q=Kifah%20Business%20Park&z=16&output=embed"
+                                        src={kifahMapEmbedUrl}
                                         title="Kifah Business Park location"
                                     />
                                 </div>

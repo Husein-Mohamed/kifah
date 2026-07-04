@@ -29,8 +29,8 @@
     }
 
     .vl-logo .kifah-header-logo {
-        width: min(200px, 42vw) !important;
-        max-height: 52px !important;
+        width: min(240px, 52vw) !important;
+        max-height: 68px !important;
     }
 
     /* Menu trigger â€” 44px+ touch target */
@@ -216,8 +216,8 @@
 
 @media (max-width: 575.98px) {
     .vl-logo .kifah-header-logo {
-        width: min(170px, 48vw) !important;
-        max-height: 46px !important;
+        width: min(210px, 56vw) !important;
+        max-height: 58px !important;
     }
 }
 

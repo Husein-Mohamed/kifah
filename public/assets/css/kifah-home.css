@@ -210,81 +210,6 @@
     transform: translateY(-3px);
 }
 
-.kifah-why-icons-section {
-    padding: 110px 0;
-    background: #ffffff;
-}
-
-.kifah-why-icons-heading {
-    max-width: 940px;
-    margin: 0 auto 58px;
-    text-align: center;
-}
-
-.kifah-why-icons-heading h2 {
-    margin: 0;
-    color: #222222;
-    font-size: clamp(36px, 4vw, 58px);
-    font-weight: 700;
-    line-height: 1.12;
-}
-
-.kifah-why-icons-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 24px;
-}
-
-.kifah-why-icon-card {
-    min-height: 310px;
-    padding: 34px 26px;
-    border: 1px solid #eceff3;
-    border-radius: 20px;
-    background-color: #111827;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    transition:
-        border-color 0.25s ease,
-        box-shadow 0.25s ease,
-        transform 0.25s ease;
-}
-
-.kifah-why-icon-card:hover {
-    border-color: rgba(239, 90, 47, 0.3);
-    box-shadow: 0 20px 55px rgba(16, 24, 40, 0.18);
-    transform: translateY(-6px);
-}
-
-.kifah-why-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 78px;
-    height: 78px;
-    margin-bottom: 28px;
-    border-radius: 50%;
-    color: #ffffff;
-    background: #ef5a2f;
-    font-size: 30px;
-}
-
-.kifah-why-icon-card h3 {
-    margin: 0 0 14px;
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
-.kifah-why-icon-card p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.86);
-    font-size: 16px;
-    line-height: 1.65;
-}
-
 .kifah-about1-section {
     padding: 110px 0;
     background: #ffffff;
@@ -664,14 +589,6 @@
         padding: 50px;
     }
 
-    .kifah-why-icons-section {
-        padding: 80px 0;
-    }
-
-    .kifah-why-icons-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .kifah-about1-section {
         padding: 80px 0;
     }
@@ -746,24 +663,6 @@
 
     .kifah-cta-button {
         width: 100%;
-    }
-
-    .kifah-why-icons-section {
-        padding: 65px 0;
-    }
-
-    .kifah-why-icons-heading {
-        margin-bottom: 38px;
-    }
-
-    .kifah-why-icons-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .kifah-why-icon-card {
-        min-height: auto;
-        padding: 30px 22px;
-        border-radius: 16px;
     }
 
     .kifah-about1-section {

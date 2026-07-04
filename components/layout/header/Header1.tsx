@@ -9,7 +9,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }: any)
                         <div className="col-lg-2 col-md-6 col-6">
                             <div className="vl-logo">
                                 <Link href="/">
-                                    <img className="kifah-header-logo" src="/assets/img/logo/kifah%20logo-01.png" alt="Kifah Business Park" style={{ width: "250px", height: "auto", maxHeight: "80px", objectFit: "contain" }} />
+                                    <img className="kifah-header-logo" src="/assets/img/logo/kifah%20logo-01.png" alt="Kifah Business Park" style={{ width: "320px", height: "auto", maxHeight: "100px", objectFit: "contain" }} />
                                 </Link>
                             </div>
                         </div>

@@ -1,6 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+
+const kifahMapUrl = "https://www.google.com/maps/search/kifah+business+park/@2.0376579,45.3040248,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D";
+
 export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
     const [isAccordion, setIsAccordion] = useState(0);
     const handleAccordion = (key: any) => {
@@ -229,7 +232,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
                                 </Link>
                             </span>
                             <span>
-                                <Link href="https://maps.app.goo.gl/kZvFFpQ9EVAZgUtc6" target="_blank">
+                                <Link href={kifahMapUrl} target="_blank">
                                     <i className="fa-solid fa-location-dot" /> Kifah Business Park
                                 </Link>
                             </span>

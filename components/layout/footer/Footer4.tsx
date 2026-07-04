@@ -1,4 +1,7 @@
 import Link from "next/link";
+
+const kifahMapEmbedUrl = "https://www.google.com/maps?q=2.0376579,45.3040248&z=17&output=embed";
+
 export default function Footer4() {
     return (
         <>
@@ -131,7 +134,7 @@ export default function Footer4() {
                             <div className="footer-widget-area">
                                 <h3>We Are Here</h3>
                                 <div className="space28" />
-                                <iframe src="https://maps.google.com/maps?q=Kifah%20Business%20Park&z=16&output=embed" width={600} height={450} style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                                <iframe src={kifahMapEmbedUrl} width={600} height={450} style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                             </div>
                         </div>
                     </div>

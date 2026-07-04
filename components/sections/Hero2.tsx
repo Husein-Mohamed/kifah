@@ -25,14 +25,6 @@ const heroStats = [
         duration: 1000,
         offset: "90px",
     },
-    {
-        value: 1,
-        suffix: "",
-        label: "Complete Destination",
-        image: "/assets/img/kifah-services/kifah services-01.png",
-        duration: 1100,
-        offset: "100px",
-    },
 ];
 
 export default function Hero2() {
@@ -178,7 +170,7 @@ export default function Hero2() {
 
                 .kifah-stats {
                     display: grid;
-                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
                     margin-top: 80px;
                     overflow: hidden;
                     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -250,8 +242,7 @@ export default function Hero2() {
                         display: none;
                     }
 
-                    .kifah-stat-item:nth-child(3),
-                    .kifah-stat-item:nth-child(4) {
+                    .kifah-stat-item:nth-child(3) {
                         border-bottom: 0;
                     }
                 }
@@ -289,10 +280,6 @@ export default function Hero2() {
 
                     .kifah-stat-item::after {
                         display: none;
-                    }
-
-                    .kifah-stat-item:nth-child(3) {
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
                     }
 
                     .kifah-stat-item h3 {

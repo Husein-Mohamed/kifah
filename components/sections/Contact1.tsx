@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const kifahMapUrl = "https://www.google.com/maps/search/kifah+business+park/@2.0376579,45.3040248,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D";
+const kifahMapEmbedUrl = "https://www.google.com/maps?q=2.0376579,45.3040248&z=17&output=embed";
+
 export default function Contact1() {
     return (
         <>
@@ -59,7 +62,7 @@ export default function Contact1() {
                                 </div>
                                 <div className="content">
                                     <p>Our Location</p>
-                                    <Link href="https://maps.app.goo.gl/kZvFFpQ9EVAZgUtc6" target="_blank">Kifah Business Park (Open Map)</Link>
+                                    <Link href={kifahMapUrl} target="_blank">Kifah Business Park (Open Map)</Link>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +155,7 @@ export default function Contact1() {
                         <div className="col-lg-12">
                             <div className="maps">
                                 <iframe
-                                    src="https://maps.google.com/maps?q=Kifah%20Business%20Park&z=16&output=embed"
+                                    src={kifahMapEmbedUrl}
                                     width={600}
                                     height={450}
                                     style={{ border: 0 }}
@@ -162,7 +165,7 @@ export default function Contact1() {
                                 />
                                 <div className="space16" />
                                 <div className="btn-area1 text-center">
-                                    <Link href="https://maps.app.goo.gl/kZvFFpQ9EVAZgUtc6" className="vl-btn1" target="_blank">
+                                    <Link href={kifahMapUrl} className="vl-btn1" target="_blank">
                                         Open Exact Location in Google Maps
                                         <span className="arrow1 ms-2">
                                             <i className="fa-solid fa-arrow-right" />

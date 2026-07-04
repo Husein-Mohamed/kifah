@@ -7,6 +7,7 @@ import "@/public/assets/css/plugins/sidebar.css";
 import "@/public/assets/css/main.css";
 import "@/public/assets/css/kifah-mobile.css";
 import "@/public/assets/css/kifah-home.css";
+import "@/app/tailwind.css";
 
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
