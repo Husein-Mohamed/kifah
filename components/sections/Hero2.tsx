@@ -31,7 +31,7 @@ export default function Hero2() {
     return (
         <>
             {/*===== HERO AREA STARTS =======*/}
-            <section className="kifah-hero">
+            <section className="relative isolate flex min-h-screen overflow-hidden max-[575px]:min-h-[1050px]">
                 <Image
                     src="/assets/img/optimized/kifah-hero.jpg"
                     alt="Kifah Business Park"
@@ -39,32 +39,34 @@ export default function Hero2() {
                     priority
                     sizes="100vw"
                     quality={90}
-                    className="kifah-hero-image"
+                    className="z-0 object-cover object-center"
                 />
 
-                <div className="kifah-hero-overlay" />
+                <div className="pointer-events-none absolute inset-0 z-[1] bg-[linear-gradient(90deg,rgba(5,12,23,0.84)_0%,rgba(5,12,23,0.62)_38%,rgba(5,12,23,0.18)_72%,rgba(5,12,23,0.25)_100%),linear-gradient(180deg,rgba(5,12,23,0.12)_45%,rgba(5,12,23,0.88)_100%)]" />
 
-                <div className="container kifah-hero-container">
-                    <div className="kifah-hero-content">
-                        <div className="kifah-title-accent" />
+                <div className="relative z-[2] mx-auto flex min-h-screen w-full max-w-[1280px] flex-col justify-between px-4 pb-[42px] pt-[230px] sm:px-6 lg:px-8 max-[991px]:pb-8 max-[991px]:pt-[190px] max-[575px]:min-h-[1050px] max-[575px]:pb-6 max-[575px]:pt-[155px]">
+                    <div className="max-w-[720px]">
+                        <div className="mb-[22px] h-[5px] w-[58px] rounded-full bg-[#ff5a1f]" />
 
-                        <h1 className="text-anime-style-3">
+                        <h1 className="text-anime-style-3 m-0 text-[clamp(48px,6vw,88px)] font-extrabold uppercase leading-[1.02] tracking-[-0.04em] text-white [text-shadow:0_5px_24px_rgba(0,0,0,0.3)] max-[575px]:text-[42px]">
                             KIFAH BUSINESS
                             <br />
                             PARK
                         </h1>
 
-                        <p>
+                        <p className="relative mb-0 mt-6 pl-[18px] text-[clamp(16px,1.4vw,20px)] font-medium leading-[1.6] tracking-[0.01em] text-white/[0.94] before:absolute before:bottom-[2px] before:left-0 before:top-[2px] before:w-[3px] before:rounded-full before:bg-[#ff5a1f] before:content-[''] max-[575px]:max-w-[320px] max-[575px]:text-[15px]">
                             A Complete Business &amp; Lifestyle Destination
                         </p>
                     </div>
 
-                    <div className="kifah-stats">
+                    <div className="mt-20 grid grid-cols-3 overflow-hidden rounded-[18px] border border-[#ff5a1f]/40 bg-[#07111d]/95 shadow-[0_28px_80px_rgba(0,0,0,0.38)] backdrop-blur-sm max-[991px]:mt-[70px] max-[991px]:grid-cols-2 max-[575px]:mt-[55px] max-[575px]:grid-cols-1 max-[575px]:rounded-[14px]">
                         {heroStats.map((stat) => (
                             <div
                                 key={stat.label}
-                                className="kifah-stat-item"
-                                style={{ backgroundImage: `url("${stat.image}")` }}
+                                className="relative flex min-h-[180px] min-w-0 flex-col justify-center bg-cover bg-center bg-no-repeat p-7 after:absolute after:right-0 after:top-[5px] after:h-[calc(100%-10px)] after:w-px after:bg-[#ff5a1f]/35 after:content-[''] last:after:hidden max-[991px]:min-h-[170px] max-[991px]:border-b max-[991px]:border-[#ff5a1f]/30 max-[991px]:p-6 max-[991px]:[&:nth-child(2)]:after:hidden max-[991px]:[&:nth-child(3)]:col-span-2 max-[991px]:[&:nth-child(3)]:border-b-0 max-[575px]:min-h-[150px] max-[575px]:bg-contain max-[575px]:p-[22px] max-[575px]:after:hidden max-[575px]:[&:nth-child(3)]:col-span-1"
+                                style={{
+                                    backgroundImage: `url("${stat.image}")`,
+                                }}
                                 aria-label={stat.label}
                                 data-aos="fade-up"
                                 data-aos-duration={stat.duration}
@@ -75,222 +77,6 @@ export default function Hero2() {
                 </div>
             </section>
             {/*===== HERO AREA ENDS =======*/}
-
-            <style>{`
-                .kifah-hero {
-                    position: relative;
-                    min-height: 100vh;
-                    overflow: hidden;
-                    isolation: isolate;
-                    display: flex;
-                }
-
-                .kifah-hero-image {
-                    object-fit: cover;
-                    object-position: center;
-                    z-index: 0;
-                }
-
-                .kifah-hero-overlay {
-                    position: absolute;
-                    inset: 0;
-                    z-index: 1;
-                    pointer-events: none;
-                    background:
-                        linear-gradient(
-                            90deg,
-                            rgba(5, 12, 23, 0.84) 0%,
-                            rgba(5, 12, 23, 0.62) 38%,
-                            rgba(5, 12, 23, 0.18) 72%,
-                            rgba(5, 12, 23, 0.25) 100%
-                        ),
-                        linear-gradient(
-                            180deg,
-                            rgba(5, 12, 23, 0.12) 45%,
-                            rgba(5, 12, 23, 0.88) 100%
-                        );
-                }
-
-                .kifah-hero-container {
-                    position: relative;
-                    z-index: 2;
-                    min-height: 100vh;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    padding-top: 230px;
-                    padding-bottom: 42px;
-                }
-
-                .kifah-hero-content {
-                    max-width: 720px;
-                }
-
-                .kifah-title-accent {
-                    width: 58px;
-                    height: 5px;
-                    margin-bottom: 22px;
-                    border-radius: 999px;
-                    background: #f05a28;
-                }
-
-                .kifah-hero-content h1 {
-                    margin: 0;
-                    color: #ffffff;
-                    font-size: clamp(48px, 6vw, 88px);
-                    font-weight: 800;
-                    line-height: 1.02;
-                    letter-spacing: -0.04em;
-                    text-transform: uppercase;
-                    text-shadow: 0 5px 24px rgba(0, 0, 0, 0.3);
-                }
-
-                .kifah-hero-content > p {
-                    position: relative;
-                    margin: 24px 0 0;
-                    padding-left: 18px;
-                    color: rgba(255, 255, 255, 0.94);
-                    font-size: clamp(16px, 1.4vw, 20px);
-                    font-weight: 500;
-                    line-height: 1.6;
-                    letter-spacing: 0.01em;
-                }
-
-                .kifah-hero-content > p::before {
-                    content: "";
-                    position: absolute;
-                    top: 2px;
-                    bottom: 2px;
-                    left: 0;
-                    width: 3px;
-                    border-radius: 999px;
-                    background: #f05a28;
-                }
-
-                .kifah-stats {
-                    display: grid;
-                    grid-template-columns: repeat(3, minmax(0, 1fr));
-                    margin-top: 80px;
-                    overflow: hidden;
-                    border: 1px solid rgba(255, 255, 255, 0.18);
-                    border-radius: 18px;
-                    background: #07111d;
-                    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
-                }
-
-                .kifah-stat-item {
-                    position: relative;
-                    min-width: 0;
-                    min-height: 180px;
-                    padding: 28px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                }
-
-                .kifah-stat-item:not(:last-child)::after {
-                    content: "";
-                    position: absolute;
-                    top: 5px;
-                    right: 0;
-                    width: 1px;
-                    height: calc(100% - 10px);
-                    background: rgba(255, 255, 255, 0.2);
-                }
-
-                .kifah-stat-item h3 {
-                    margin: 0;
-                    color: #ffffff;
-                    font-size: clamp(38px, 3.5vw, 56px);
-                    font-weight: 800;
-                    line-height: 1;
-                    letter-spacing: -0.04em;
-                    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
-                }
-
-                .kifah-stat-item p {
-                    margin: 12px 0 0;
-                    color: rgba(255, 255, 255, 0.85);
-                    font-size: 15px;
-                    font-weight: 500;
-                    line-height: 1.45;
-                }
-
-                @media (max-width: 991px) {
-                    .kifah-hero-container {
-                        padding-top: 190px;
-                        padding-bottom: 32px;
-                    }
-
-                    .kifah-stats {
-                        grid-template-columns: repeat(2, minmax(0, 1fr));
-                        gap: 0;
-                        margin-top: 70px;
-                    }
-
-                    .kifah-stat-item {
-                        min-height: 170px;
-                        padding: 24px;
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-                    }
-
-                    .kifah-stat-item:nth-child(2)::after {
-                        display: none;
-                    }
-
-                    .kifah-stat-item:nth-child(3) {
-                        border-bottom: 0;
-                    }
-                }
-
-                @media (max-width: 575px) {
-                    .kifah-hero {
-                        min-height: 820px;
-                    }
-
-                    .kifah-hero-container {
-                        min-height: 820px;
-                        padding-top: 165px;
-                        padding-bottom: 24px;
-                    }
-
-                    .kifah-hero-content h1 {
-                        font-size: 46px;
-                    }
-
-                    .kifah-hero-content > p {
-                        max-width: 320px;
-                        font-size: 15px;
-                    }
-
-                    .kifah-stats {
-                        margin-top: 55px;
-                        grid-template-columns: 1fr;
-                        border-radius: 14px;
-                    }
-
-                    .kifah-stat-item {
-                        min-height: 170px;
-                        padding: 22px;
-                    }
-
-                    .kifah-stat-item::after {
-                        display: none;
-                    }
-
-                    .kifah-stat-item h3 {
-                        font-size: 38px;
-                    }
-
-                    .kifah-stat-item p {
-                        font-size: 13px;
-                    }
-                }
-            `}</style>
         </>
     );
 }

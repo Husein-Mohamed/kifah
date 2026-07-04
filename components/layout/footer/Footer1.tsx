@@ -140,14 +140,7 @@ export default function Footer1() {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link
-                                                href={kifahMapUrl}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                <i className="fa-solid fa-location-dot me-2" />
-                                                Kifah Business Park
-                                            </Link>
+                                       
                                         </li>
                                         <li>
                                             <Link
@@ -157,6 +150,14 @@ export default function Footer1() {
                                             >
                                                 <i className="fa-solid fa-globe me-2" />
                                                 www.kifahbusiness.so
+                                            </Link>
+                                                 <Link
+                                                href={kifahMapUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <i className="fa-solid fa-location-dot me-2" />
+                                                Wadada Masaarida, Hodan District, Mogadishu, Somalia
                                             </Link>
                                         </li>
                                     </ul>
