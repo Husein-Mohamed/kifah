@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LazyGoogleMap from "@/components/elements/LazyGoogleMap";
 
 const socialLinks = [
     {
@@ -19,8 +18,10 @@ const socialLinks = [
     },
 ];
 
-const kifahMapUrl = "https://www.google.com/maps/search/kifah+business+park/@2.0376579,45.3040248,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D";
-const kifahMapEmbedUrl = "https://www.google.com/maps?q=2.0376579,45.3040248&z=17&output=embed";
+const kifahMapUrl =
+    "https://www.google.com/maps/search/kifah+business+park/@2.0376579,45.3040248,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D";
+
+const kifahMapImage = "/assets/img/map.jpeg";
 
 export default function Footer1() {
     return (
@@ -74,10 +75,13 @@ export default function Footer1() {
                                         src="/assets/img/logo/kifah%20logo-02.png"
                                         alt="Kifah Business Park"
                                         style={{
-                                            width: "300px",
+                                            display: "block",
+                                            width: "400px",
+                                            maxWidth: "100%",
                                             height: "auto",
-                                            maxHeight: "96px",
+                                            maxHeight: "130px",
                                             objectFit: "contain",
+                                            objectPosition: "left center",
                                         }}
                                     />
                                     <div className="space24" />
@@ -139,9 +143,7 @@ export default function Footer1() {
                                                 info@kifahbusiness.so
                                             </Link>
                                         </li>
-                                        <li>
-                                       
-                                        </li>
+                                        <li></li>
                                         <li>
                                             <Link
                                                 href="https://www.kifahbusiness.so"
@@ -151,13 +153,15 @@ export default function Footer1() {
                                                 <i className="fa-solid fa-globe me-2" />
                                                 www.kifahbusiness.so
                                             </Link>
-                                                 <Link
+
+                                            <Link
                                                 href={kifahMapUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
                                                 <i className="fa-solid fa-location-dot me-2" />
-                                                Wadada Masaarida, Hodan District, Mogadishu, Somalia
+                                                Wadada Masaarida, Hodan District,
+                                                Mogadishu, Somalia
                                             </Link>
                                         </li>
                                     </ul>
@@ -169,9 +173,17 @@ export default function Footer1() {
                                 <div className="footer-widget-area">
                                     <h3>We Are Here</h3>
                                     <div className="space28" />
-                                    <LazyGoogleMap
-                                        src={kifahMapEmbedUrl}
-                                        title="Kifah Business Park location"
+
+                                    <img
+                                        src={kifahMapImage}
+                                        alt="Map showing the location of Kifah Business Park"
+                                        style={{
+                                            display: "block",
+                                            width: "100%",
+                                            height: "220px",
+                                            objectFit: "cover",
+                                            borderRadius: "12px",
+                                        }}
                                     />
                                 </div>
                             </div>
@@ -193,7 +205,7 @@ export default function Footer1() {
                                     </li>
                                     <li>
                                         <Link href="/terms-conditions">
-                                            Terms & Conditions
+                                            Terms &amp; Conditions
                                         </Link>
                                     </li>
                                 </ul>
@@ -202,6 +214,7 @@ export default function Footer1() {
                     </div>
                 </div>
             </div>
+
             <div className="space30" />
         </>
     );
