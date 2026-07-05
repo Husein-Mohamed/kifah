@@ -45,21 +45,21 @@ export default function Hero2() {
                 <div className="pointer-events-none absolute inset-0 z-[1] bg-[linear-gradient(90deg,rgba(5,12,23,0.84)_0%,rgba(5,12,23,0.62)_38%,rgba(5,12,23,0.18)_72%,rgba(5,12,23,0.25)_100%),linear-gradient(180deg,rgba(5,12,23,0.12)_45%,rgba(5,12,23,0.88)_100%)]" />
 
                 <div className="relative z-[2] mx-auto flex min-h-screen w-full max-w-[1280px] flex-col justify-between px-4 pb-[42px] pt-[230px] sm:px-6 lg:px-8 max-[991px]:pb-8 max-[991px]:pt-[190px] max-[575px]:min-h-[1050px] max-[575px]:pb-6 max-[575px]:pt-[155px]">
-                    <div className="max-w-[720px]">
+                    <div className="max-w-[760px] font-sans">
                         <div className="mb-[22px] h-[5px] w-[58px] rounded-full bg-[#ff5a1f]" />
 
-                        <h1 className="text-anime-style-3 m-0 text-[clamp(48px,6vw,88px)] font-extrabold uppercase leading-[1.02] tracking-[-0.04em] text-white [text-shadow:0_5px_24px_rgba(0,0,0,0.3)] max-[575px]:text-[42px]">
+                        <h1 className="text-anime-style-3 m-0 text-[clamp(48px,6vw,88px)] font-black uppercase leading-[0.98] tracking-[-0.045em] text-white [text-shadow:0_6px_28px_rgba(0,0,0,0.35)] max-[575px]:text-[42px] max-[575px]:leading-[1]">
                             KIFAH BUSINESS
                             <br />
                             PARK
                         </h1>
 
-                        <p className="relative mb-0 mt-6 pl-[18px] text-[clamp(16px,1.4vw,20px)] font-medium leading-[1.6] tracking-[0.01em] text-white/[0.94] before:absolute before:bottom-[2px] before:left-0 before:top-[2px] before:w-[3px] before:rounded-full before:bg-[#ff5a1f] before:content-[''] max-[575px]:max-w-[320px] max-[575px]:text-[15px]">
+                        <p className="relative mb-0 mt-7 max-w-[660px] pl-[20px] text-[clamp(16px,1.35vw,20px)] font-semibold leading-[1.55] tracking-[-0.01em] text-white/[0.96] before:absolute before:bottom-[2px] before:left-0 before:top-[2px] before:w-[3px] before:rounded-full before:bg-[#ff5a1f] before:content-[''] max-[575px]:mt-5 max-[575px]:max-w-[340px] max-[575px]:text-[15px]">
                             A Complete Business &amp; Lifestyle Destination
                         </p>
                     </div>
 
-                    <div className="mt-20 grid grid-cols-3 overflow-hidden rounded-[18px] border border-[#ff5a1f]/40 bg-[#07111d]/95 shadow-[0_28px_80px_rgba(0,0,0,0.38)] backdrop-blur-sm max-[991px]:mt-[70px] max-[991px]:grid-cols-2 max-[575px]:mt-[55px] max-[575px]:grid-cols-1 max-[575px]:rounded-[14px]">
+                    <div className="mt-20 grid grid-cols-3 overflow-hidden rounded-[18px] border border-[#ff5a1f]/40 bg-white shadow-[0_28px_80px_rgba(0,0,0,0.38)] backdrop-blur-sm max-[991px]:mt-[70px] max-[991px]:grid-cols-2 max-[575px]:mt-[55px] max-[575px]:grid-cols-1 max-[575px]:rounded-[14px]">
                         {heroStats.map((stat) => (
                             <div
                                 key={stat.label}
